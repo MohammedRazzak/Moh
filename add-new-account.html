@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Mohtwize</title>
+    <meta name="description" content="Mohtwize">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="keywords" content="Mohtwize">
+    <meta name="author" content="Mohtwize">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+</head> 
+
+<body>
+    <div class="mobile-menu">
+        <div class="menu">
+            <button class="nav-tgl" type="button" aria-label="toggle menu">
+                    <span aria-hidden="true"></span>
+                </button>
+            <nav class="nav">
+                <ul>
+                    <li onclick="closeMobileMenu()">ادارة الحجوزات</li>
+                    <li onclick="closeMobileMenu()">الحلقات الجديدة</li>
+                    <li onclick="closeMobileMenu()">البودكاست</li>
+                    <li onclick="closeMobileMenu()">اداره المدفوعات</li>
+                    <li onclick="closeMobileMenu()">حسابي البنكي</li>
+                    <li onclick="closeMobileMenu()">تواصل معنا </li>
+                    <li class="active" onclick="closeMobileMenu()">تسجيل خروج</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="content">
+                <img src="./img/picture.svg" alt="">
+            </div>
+        </div>
+    </header>
+    <div class="podcasts">
+        <div class="container">
+            <div class="content">
+                <form class="add-new-episode">
+                    <div class="input-widget">
+                        <label class="label">عنوان الحلقة</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-widget">
+                        <label class="label">تاريخ النشر</label>
+                        <input type="date">
+                    </div>
+                    <div class="input-widget">
+                        <label class="label">عدد الاعلانات المتاحة</label>
+                        <input type="radio" id="1" name="ads" value="1">
+                        <label for="1">1</label><br>
+                        <input type="radio" id="1" name="ads" value="2">
+                        <label for="2">2</label><br>
+                        <input type="radio" id="2" name="ads" value="3">
+                        <label for="3">3</label><br>
+                    </div>
+                    <div class="input-widget">
+                        <label class="label">اختر البودكاست</label>
+                        <select name="cars" id="cars">
+                            <option value="1">سعد الغنام</option>
+                            <option value="2">محمد رزاق </option>
+                            <option value="3">محمد</option>
+                            <option value="4">امين</option>
+                        </select>
+                    </div>
+                    <button class="button">اضافة حلقة جديدة</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

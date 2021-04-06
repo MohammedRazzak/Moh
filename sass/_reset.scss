@@ -1,0 +1,130 @@
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    object-fit: cover;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    @media only screen and (max-width: 992px) {
+        width: 100%;
+        padding: 0px 20px;
+        box-sizing: border-box;
+    }
+    .content {
+        @include flex;
+    }
+}
+
+.hide-resposive {
+    display: flex !important;
+    @media only screen and (max-width: 992px) {
+        display: none !important;
+    }
+}
+
+.hide-desktop {
+    display: none !important;
+    @media only screen and (max-width: 992px) {
+        display: flex !important;
+    }
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    line-height: 26px;
+}
+p{
+    font-weight: 300;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Cairo', sans-serif !important;
+    background: #ffffff;
+    @media only screen and (max-width: 992px) {
+        padding-bottom: 40px;
+    }
+}
+
+.ul {
+    @include reset-list;
+    @include flex;
+}
+
+.input-widget {
+    width: 100%;
+    margin-bottom: 20px;
+    .label {
+        font-size: 16px;
+        margin-bottom: 5px;
+        display: block;
+    }
+    input[type="text"] , input[type="date"]  , select{
+        width: 100%;
+        outline: none;
+        height: 40px;
+        border: 1px solid #d8d8d8;
+        padding: 0px 7px;
+        box-sizing: border-box;
+        font-size: 16px;
+        color: $main-color;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+}
+
+button,
+input,
+textarea {
+    outline: none;
+    padding: 0px 5px;
+    font-size: 16px;
+}
+
+textarea {
+    padding: 5px;
+}
+
+.button {
+    height: 40px;
+    padding-bottom: 3px !important;
+    background: $main-color;
+    color: $secondary-color;
+    letter-spacing: 0.03em;
+    font-size: 18px;
+    border: 0px;
+    border-radius: 4px;
+    padding: 0px 25px;
+    font-family: 'Cairo', sans-serif !important;
+    &.secondary {
+        background: $secondary-color;
+        color: $main-color;
+        border: $main-color 1px solid;
+    }
+    &.success{
+        background: $secondary-color;
+        color: #0e8679;
+        border: #0e8679 1px solid;
+        img{
+            width: 15px;
+            position: relative;
+            top:4px;
+            margin-left: 10px;
+        }
+    }
+}   
