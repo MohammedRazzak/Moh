@@ -51,10 +51,35 @@
     <div class="podcasts">
         <div class="container">
             <div class="content">
-                <h3 class="title">هلا بالمودير</h3>
-                <div class="add-episode">
-                    <p>ابدأ باضافه حلقة جديدة لبدء استقبال طلبات الاعلان من المعلنين</p>
-                    <button class="button">اضف حلقة جديدة</button>
+                <h3 class="title">ادارة المدفوعات</h3>
+                <div class="list-with-title">
+                    <div class="tabs">
+                        <div class="tab">
+                            <button class="tablinks" id="defaultOpen" onclick="openItem(event, 'item1')"><span class="count">34</span>الاعلانات غير المدفوعة</button>
+                            <button class="tablinks" onclick="openItem(event, 'item2')"><span class="count">34</span>الاعلانات المدفوعة</button>
+                          </div>
+                          
+                          <!-- Tab content -->
+                          <div id="item1" class="tabcontent">
+                            <ul class="list">
+                                <li class="list-col">
+                                    <p>فاتورة رقم 12312312</p>
+                                    <p>كامبلي -تصميم المنتجات .. </p>
+                                    <h3>مبلغ الفاتورة 450 ريال</h3>
+                                </li>
+                            </ul>
+                          </div>
+                          
+                          <div id="item2" class="tabcontent">
+                            <ul class="list">
+                                <li class="list-col">
+                                    <p>فاتورة رقم 12312312</p>
+                                    <p>كامبلي -تصميم المنتجات .. </p>
+                                    <h3>مبلغ الفاتورة 450 ريال</h3>
+                                </li>
+                            </ul>
+                          </div>
+                    </div>
                 </div>
             </div>
         </div>

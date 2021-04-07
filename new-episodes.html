@@ -51,10 +51,45 @@
     <div class="podcasts">
         <div class="container">
             <div class="content">
-                <h3 class="title">هلا بالمودير</h3>
-                <div class="add-episode">
-                    <p>ابدأ باضافه حلقة جديدة لبدء استقبال طلبات الاعلان من المعلنين</p>
-                    <button class="button">اضف حلقة جديدة</button>
+                <h3 class="title">الحلقات الجديدة</h3>
+                <div class="list-with-title">
+                    <div class="tabs">
+                        <div class="tab">
+                            <button class="tablinks" id="defaultOpen" onclick="openItem(event, 'item1')"><span class="count">34</span>الحلقات المتاحة</button>
+                            <button class="tablinks" onclick="openItem(event, 'item2')"><span class="count">34</span>الحلقات الغير متاحة</button>
+                          </div>
+                          
+                          <!-- Tab content -->
+                          <div id="item1" class="tabcontent">
+                            <ul class="list">
+                                <li>
+                                    <div>
+                                        <h3>تصميم المنتجات متاحه للحجز</h3>
+                                        <p>12/3/2021</p>
+                                        <p>الاعلانات المتاحة : 1</p>
+                                        <p> بودكاست : سعد غنام</p>
+                                    </div>
+                                    <div class="available center">
+                                        <button class="button secondary">تحديث</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>تصميم المنتجات متاحة للحجز</h3>
+                                        <p>12/3/2021</p>
+                                        <p>الاعلانات المتاحة : 1</p>
+                                        <p> بودكاست : سعد غنام</p>
+                                    </div>
+                                    <div class="available center">
+                                        <button class="button secondary">تحديث</button>
+                                    </div>
+                                </li>
+                            </ul>
+                          </div>
+                          
+                          <div id="item2" class="tabcontent">
+                          </div>
+                    </div>
                 </div>
             </div>
         </div>

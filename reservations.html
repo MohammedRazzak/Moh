@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Mohtwize</title>
+    <meta name="description" content="Mohtwize">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="keywords" content="Mohtwize">
+    <meta name="author" content="Mohtwize">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+</head> 
+
+<body>
+    <div class="mobile-menu">
+        <div class="menu">
+            <button class="nav-tgl" type="button" aria-label="toggle menu">
+                    <span aria-hidden="true"></span>
+                </button>
+            <nav class="nav">
+                <ul>
+                    <li onclick="closeMobileMenu()">ادارة الحجوزات</li>
+                    <li onclick="closeMobileMenu()">الحلقات الجديدة</li>
+                    <li onclick="closeMobileMenu()">البودكاست</li>
+                    <li onclick="closeMobileMenu()">اداره المدفوعات</li>
+                    <li onclick="closeMobileMenu()">حسابي البنكي</li>
+                    <li onclick="closeMobileMenu()" class="active">تواصل معنا </li>
+                    <li class="active logout" onclick="closeMobileMenu()">تسجيل خروج</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="content">
+                <img src="./img/picture.svg" alt="">
+                <ul class="desktop-menu">
+                    <li><a>ادارة الحجوزات</a></li>
+                    <li><a>الحلفات الجديدة</a></li>
+                    <li><a>البودكاست</a></li>
+                    <li><a>ادارة المدفوعات</a></li>
+                    <li><a>حسابي البنكي</a></li>
+                </ul>
+                <a class="logout-button"></a>
+            </div>
+        </div>
+    </header>
+    <div class="podcasts">
+        <div class="container">
+            <div class="content">
+                <h3 class="title">ادارة الحجوزات</h3>
+                <div class="list-with-title">
+                    <div class="tabs">
+                        <div class="tab">
+                            <button class="tablinks" id="defaultOpen" onclick="openItem(event, 'item1')"><span class="count">34</span>طلبات بانتظار الموافقة</button>
+                            <button class="tablinks" onclick="openItem(event, 'item2')"><span class="count">34</span>الطلبات المؤكدة</button>
+                          </div>
+                          
+                          <!-- Tab content -->
+                          <div id="item1" class="tabcontent">
+                            <ul class="list">
+                                <li class="list-col">
+                                    <h3>المعلن : كامبلي</h3>
+                                    <p>مبلغ الاعلان : 450 ريال  </p>
+                                    <p>الوصف : هنا يكتب وصف المعلن اللمودير الكبير اللي شايل الحساب</p>
+                                    <button class="button">تأكيد الحجز المعلن</button>
+                                    <button class="button success"> <img src="./img/check.svg" alt="">تم قبول المعلن</button>
+                                </li>
+                            </ul>
+                          </div>
+                          
+                          <div id="item2" class="tabcontent">
+                            <ul class="list">
+                                <li class="list-col">
+                                    <h3>المعلن : كامبلي</h3>
+                                    <p>مبلغ الاعلان : 450 ريال  </p>
+                                    <p>الوصف : هنا يكتب وصف المعلن اللمودير الكبير اللي شايل الحساب</p>
+                                    <a class="ghost-link">قابلة للدفع , انشي فاتورة</a>
+                                </li>
+                                <li class="list-col">
+                                    <h3>المعلن : كامبلي</h3>
+                                    <p>مبلغ الاعلان : 450 ريال  </p>
+                                    <p>الوصف : هنا يكتب وصف المعلن اللمودير الكبير اللي شايل الحساب</p>
+                                    <a class="ghost-link published">قيد النشر</a>
+                                </li>
+                            </ul>
+                            <button class="button full-width">انشاء فاتورة</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

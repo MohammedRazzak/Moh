@@ -19,7 +19,7 @@
         <div class="menu">
             <button class="nav-tgl" type="button" aria-label="toggle menu">
                     <span aria-hidden="true"></span>
-                </button>
+            </button>
             <nav class="nav">
                 <ul>
                     <li onclick="closeMobileMenu()">ادارة الحجوزات</li>
@@ -51,11 +51,38 @@
     <div class="podcasts">
         <div class="container">
             <div class="content">
-                <h3 class="title">هلا بالمودير</h3>
-                <div class="add-episode">
-                    <p>ابدأ باضافه حلقة جديدة لبدء استقبال طلبات الاعلان من المعلنين</p>
-                    <button class="button">اضف حلقة جديدة</button>
-                </div>
+                <h3 class="title">انشاء فاتورة</h3>
+                <form class="add-new-episode">
+                    <table>
+                        <tr>
+                            <td>
+                                <h3>عدد الطلبات المستحقة للدفع</h3>
+                                <p>كامبلي - تصميم المنتجات </p>
+                                <p>تاريخ النشر 20/2/2021</p>
+                            </td>
+                            <td>
+                                <h3>1</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>اجمالي المبلغ المستحق</h3>
+                            </td>
+                            <td>
+                                <h3>450$</h3>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="input-widget">
+                        <label class="label">حدد البنك الخاص بك</label>
+                        <select name="cars" id="cars">
+                            <option value="1">البنك الاهلي</option>
+                            <option value="2">بنك مصر</option>
+                            <option value="3">CIB</option>
+                        </select>
+                    </div>
+                    <button class="button">انشاء فاتورة</button>
+                </form>
             </div>
         </div>
     </div>
