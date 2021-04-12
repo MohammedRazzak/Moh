@@ -12,54 +12,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.rtl.min.css" integrity="sha384-trxYGD5BY4TyBTvU5H23FalSCYwpLA0vWEvXXGm5eytyztxb+97WzzY+IWDOSbav" crossorigin="anonymous">
+
 </head> 
 
 <body>
-    <div class="mobile-menu">
-        <div class="menu">
-            <button class="nav-tgl" type="button" aria-label="toggle menu">
-                    <span aria-hidden="true"></span>
-                </button>
-            <nav class="nav">
-                <ul>
-                    <li onclick="closeMobileMenu()">ادارة الحجوزات</li>
-                    <li onclick="closeMobileMenu()">الحلقات الجديدة</li>
-                    <li onclick="closeMobileMenu()">البودكاست</li>
-                    <li onclick="closeMobileMenu()">اداره المدفوعات</li>
-                    <li onclick="closeMobileMenu()">حسابي البنكي</li>
-                    <li onclick="closeMobileMenu()" class="active">تواصل معنا </li>
-                    <li class="active logout" onclick="closeMobileMenu()">تسجيل خروج</li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <div class="content">
-                <img src="./img/picture.svg" alt="">
-                <ul class="desktop-menu">
-                    <li><a>ادارة الحجوزات</a></li>
-                    <li><a>الحلفات الجديدة</a></li>
-                    <li><a>البودكاست</a></li>
-                    <li><a>ادارة المدفوعات</a></li>
-                    <li><a>حسابي البنكي</a></li>
-                </ul>
+          <a class="navbar-brand" href="#"><img src="./img/picture.svg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">ادارة الحجوزات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">الحلفات الجديدة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">البودكاست</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ادارة المدفوعات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">حسابي البنكي</a>
+              </li>
+            </ul>
+            <form class="d-flex">
                 <a class="logout-button"></a>
-            </div>
+              </form>
+          </div>
         </div>
-    </header>
+      </nav>
     <div class="podcasts">
         <div class="container">
             <div class="content">
                 <h3 class="title">هلا بالمودير</h3>
                 <div class="add-episode">
                     <p>ابدأ باضافه حلقة جديدة لبدء استقبال طلبات الاعلان من المعلنين</p>
-                    <button class="button">اضف حلقة جديدة</button>
+                    <button type="button" class="btn btn-dark">اضف حلقة جديدة</button>
                 </div>
             </div>
         </div>
     </div>
     <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
